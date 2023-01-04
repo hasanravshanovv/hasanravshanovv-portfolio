@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0057ff;
+  --primary-dark: #003bd7;
+  --primary-light: #1c64f6;
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "RobotoS", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}

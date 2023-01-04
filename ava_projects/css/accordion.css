@@ -1,0 +1,75 @@
+.accordion {
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 100px;
+}
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 0 30px 40px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.accordion-body {
+  padding: 10px;
+}
+.accordion-button:hover {
+  background: #a49696;
+  cursor: pointer;
+}
+.accordion-button:active {
+  background-color: #dedede;
+  opacity: height 1s, opacity 1s;
+}
+.accordion-collapse {
+  visibility: hidden;
+  height: 0;
+  transition: height 1s;
+}
+.accordion-show {
+  visibility: visible;
+  opacity: 1;
+  height: 100px;
+}
+
+.accordion-sing {
+  color: blue;
+}
+
+.accordion-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-img {
+  background: url(../images/people-3.png);
+  width: 540px;
+  height: 589px;
+}
+
+.accordion-text {
+  height: 100px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.accordion-under-text {
+  height: 52px;
+  margin-top: 148px;
+  margin-bottom: 58px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+
+  color: #000000;
+}

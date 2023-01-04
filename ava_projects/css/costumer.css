@@ -1,0 +1,157 @@
+.costumer-section {
+  position: relative;
+  padding: 100px;
+  display: flex;
+  gap: 250px;
+  margin-top: 150px;
+}
+
+.costumer-box {
+  width: 540px;
+}
+
+.costumer-section-content {
+  margin-bottom: 40px;
+}
+.costumer-section-heading {
+  margin-bottom: 50px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.costumer-section-content-text {
+  margin-top: 48px;
+  margin-bottom: 20px;
+  line-height: 26px;
+  font-family: "Roboto" sans-serif;
+  text-align: justify;
+}
+.costumer-logo {
+  margin-bottom: 20px;
+}
+.costumer-logo-2 {
+  margin-left: 235px;
+  margin-bottom: 20px;
+}
+
+.costumer-under-line {
+  display: flex;
+  gap: 89px;
+}
+.costumer-under-text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.costumer-img {
+  position: absolute;
+  height: 200px;
+  width: 540px;
+  transform: translate(9px) translateY(-200px);
+  /* background: url(../images/people-2.png); */
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: 0px 8px 28px #5353534e;
+}
+.class {
+  background: #ffffff;
+  box-shadow: 0px 8px 28px #5353534e;
+  border-radius: 15px;
+  width: 540px;
+}
+.costumer-img {
+  position: absolute;
+  height: 200px;
+  width: 540px;
+  transform: translate(9px) translateY(-200px);
+  background: url(../images/people-2.png);
+  border-radius: 15px 15px 0px 0px;
+
+  box-shadow: 0px 8px 28px #5353534e;
+}
+.costumer-header {
+  position: relative;
+  padding: 57px;
+  border-radius: 50px;
+  filter: drop-shadow(2px 2px 5px #00000045);
+  width: 570px;
+}
+.costumer-header-text {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 57px;
+  color: #000000;
+}
+.costumer-header-under-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 26px;
+  text-align: center;
+  color: #000000;
+}
+.enter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  background: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  height: 60px;
+  width: 150px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+}
+.subject {
+  width: 460px;
+  height: 60px;
+  box-sizing: border-box;
+  background: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+.subject-2 {
+  height: 140px;
+}
+.btn-1 {
+  margin: 100px auto;
+}
+.btn-2 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 15px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  width: 460px;
+}
