@@ -259,29 +259,23 @@ body {
 .content_main_block_sub_title {
   font-weight: 700;
   font-size: 22px;
-  color: #ff9900;
   line-height: 29px;
-  text-align: center;
+  color: #ff9900;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 .content_main_block_title {
   font-weight: 800;
-  text-align: center;
   font-size: 54px;
   line-height: 73px;
-  /* or 135% */
-
   margin-bottom: 20px;
 }
 
 .content_main_block_text {
-  font-weight: 400;
   font-size: 17px;
   line-height: 23px;
   letter-spacing: 0.01em;
   margin-bottom: 45px;
-  text-align: center;
   color: #31353b;
 }
 
