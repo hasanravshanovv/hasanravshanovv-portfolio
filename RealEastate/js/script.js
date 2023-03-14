@@ -30,3 +30,7 @@ document.addEventListener("click", function (e) {
     tabItems[newActiveIndex].classList.add("active")
   }
 })
+
+
+
+
