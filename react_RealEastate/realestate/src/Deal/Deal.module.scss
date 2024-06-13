@@ -1,0 +1,195 @@
+/* ---------- ----------title---------- ---------- */
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.375;
+}
+.title_center {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.375;
+  text-align: center;
+}
+/* ---------- ----------deals---------- ---------- */
+.deals {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+@media (max-width: 990.98px) {
+  .deals {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .deals {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.deals_header {
+  margin-bottom: 500px;
+}
+.deals_tabs {
+}
+/* ---------- ----------header_deals---------- ---------- */
+
+.header_deals {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header_deals_content {
+  flex: 1 1 auto;
+}
+.header_deals_title {
+  text-align: center;
+}
+.header_deals_title:not(:last-child) {
+  margin-bottom: 15px;
+}
+.header_deals_text {
+  max-width: 470px;
+  line-height: 24px;
+}
+.header_deals_link {
+  background-color: #f85a47;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  color: #fff;
+  line-height: 23px;
+  padding: 22px 33px;
+  box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07),
+    0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481),
+    0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185),
+    0px 20px 13px rgba(248, 90, 71, 0.035),
+    0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815),
+    0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+  border-radius: 5px;
+}
+
+@media (max-width: 767.98px) {
+  .header_deals_link {
+    width: 100%;
+  }
+}
+.header_deals_link:hover {
+  background-color: #de3b29;
+  text-decoration: underline;
+}
+
+/* ---------- ----------tabs---------- ---------- */
+.tabs_deals {
+}
+.tabs_deals_nav {
+  display: flex;
+  column-gap: 50px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  margin: 50px 0 45px 0;
+}
+.tabs_deals_button {
+  font-size: 19px;
+  line-height: 26px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease 0s;
+  background-color: transparent;
+}
+
+.tabs_deals_button::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: width 0.3s ease 0s;
+  background-color: red;
+}
+
+.tabs_deals_button:hover {
+  color: red;
+}
+.tabs_deals_button:hover::after {
+  width: 100%;
+}
+.tabs_deals_button.active {
+  color: red;
+}
+
+.tabs_deals_button.active::after {
+  width: 100%;
+}
+
+.tabs_deals_body {
+}
+.tabs_deals_item {
+  display: none;
+}
+.tabs_deals_item.active {
+  display: block;
+}
+
+/* ---------- ----------item---------- ---------- */
+.item_tabs {
+}
+.item_tabs_items {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.item_tabs_item {
+  position: relative;
+}
+.item_tabs_options {
+  position: absolute;
+  left: 14px;
+  z-index: 2;
+  top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.item_tabs_option {
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 6px 12px;
+  transition: background-color 0.3s ease 0s;
+}
+
+.item_tabs_option:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.item_tabs_image {
+  position: relative;
+  display: block;
+  padding-bottom: 81%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item_tabs_image:hover img {
+  transform: scale(1.1);
+}
+.item_tabs_image img {
+  transition: transform 0.3s ease 0s;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

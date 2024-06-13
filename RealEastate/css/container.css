@@ -660,12 +660,11 @@ body {
   text-align: center;
 }
 .header_deals_title:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .header_deals_text {
   max-width: 470px;
   line-height: 24px;
-  /* or 150% */
 }
 .header_deals_link {
   background-color: #f85a47;

@@ -47,23 +47,23 @@ body {
 }
 
 /* ---------- ----------container---------- ---------- */
-[class*=_container] {
+[class*="_container"] {
   max-width: 1080px;
   margin: 0 auto;
 }
 
 @media (max-width: 1199.98px) {
-  [class*=_container] {
+  [class*="_container"] {
     max-width: 970px;
   }
 }
 @media (max-width: 991.98px) {
-  [class*=_container] {
+  [class*="_container"] {
     max-width: 750px;
   }
 }
 @media (max-width: 767.98px) {
-  [class*=_container] {
+  [class*="_container"] {
     max-width: none;
     padding: 0px 15px;
   }
