@@ -1,15 +1,24 @@
+"use client"
+
+import React from "react"
 import { Input } from "../ui"
 import { CheckboxFiltersGroup } from "./checkbox-filters-group"
 import { FilterCheckbox } from "./filter-checkbox"
 import { RangeSlider } from "./range-slider"
 import { Title } from "./title"
-import React from "react"
+import { useFilterIngredients } from "@/hook/useFilterIngredients"
 
 interface Props {
   className?: string
 }
 
 export const Filtres: React.FC<Props> = ({ className }) => {
+  const { ingredients, loading } = useFilterIngredients()
+
+  const items = ingredients.map((item) => ({
+    value: String(item.id),
+    text: item.name,
+  }))
   return (
     <div className={className}>
       <Title text="Фильтрация" size="sm" className="mb-5 font-bold" />
@@ -41,84 +50,9 @@ export const Filtres: React.FC<Props> = ({ className }) => {
         title="Ингредиенты:"
         className="mt-5"
         limit={6}
-        defaultItem={[
-          {
-            text: "Сврный соус ",
-            value: "1",
-          },
-          {
-            text: "Моцарелла ",
-            value: "2",
-          },
-          {
-            text: "Чеснок ",
-            value: "3",
-          },
-          {
-            text: " Солённые огурчики ",
-            value: "4",
-          },
-          {
-            text: "Красный лук ",
-            value: "5",
-          },
-          {
-            text: "Томаты ",
-            value: "6",
-          },
-        ]}
-        items={[
-          {
-            text: "Сврный соус ",
-            value: "1",
-          },
-          {
-            text: "Моцарелла ",
-            value: "2",
-          },
-          {
-            text: "Чеснок ",
-            value: "3",
-          },
-          {
-            text: " Солённые огурчики ",
-            value: "4",
-          },
-          {
-            text: "Красный лук ",
-            value: "5",
-          },
-          {
-            text: "Томаты ",
-            value: "6",
-          },
-
-          {
-            text: "Сврный соус ",
-            value: "1",
-          },
-          {
-            text: "Моцарелла ",
-            value: "2",
-          },
-          {
-            text: "Чеснок ",
-            value: "3",
-          },
-          {
-            text: " Солённые огурчики ",
-            value: "4",
-          },
-          {
-            text: "Красный лук ",
-            value: "5",
-          },
-          {
-            text: "Томаты ",
-            value: "6",
-          },
-        ]}
-        defaultValue={[]}
+        defaultItem={items.slice(0, 6)}
+        items={items}
+        loading={loading}
       />
     </div>
   )
